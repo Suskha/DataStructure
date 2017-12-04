@@ -1,0 +1,19 @@
+# Linked List
+
+#### Main file of the program is LinkedListDemo.java
+
+
+Functions used are:
+```
+deleteHead()
+insertAtHead(int data)
+length()
+searchItem(int data)
+insertNode(int data)
+```
+Functions description;
+deleteHead() - deletes the head data;
+insertAtHead(int data) - insert data at the head(last)
+length() - finds the length of the linked list
+searchItem(int data) - checks whether the data is available or not
+insertNode(int data) - inserts data in between the two nodes only.

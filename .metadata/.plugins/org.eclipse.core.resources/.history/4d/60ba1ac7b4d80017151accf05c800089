@@ -1,0 +1,8 @@
+# Linked List
+
+#### Main file of the program is LinkedListDemo.java
+
+```
+void deleteHead();
+void insertAtHead(int data);
+```

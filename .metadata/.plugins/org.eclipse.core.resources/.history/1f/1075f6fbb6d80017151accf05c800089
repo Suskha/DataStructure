@@ -1,0 +1,22 @@
+# Binary Tree
+
+#### the main file of the program is Main.java
+
+Functions are:
+
+```
+insert(Integer data);
+inTravese();
+findMax();
+findMin();
+delete(Integer data);
+find (Integer data);
+
+```
+
+Functions description:
+
+insert(Integer data) - inserts the data
+
+find(Integer data) - checks whether data is present or not
+

@@ -1,0 +1,8 @@
+package com.stack;
+
+public interface FuncDefination {
+
+	String pop();
+	String peek();
+	public void push();
+}

@@ -1,0 +1,13 @@
+# Linked List
+
+#### Main file of the program is LinkedListDemo.java
+
+
+Functions used are:
+```
+deleteHead();
+insertAtHead(int data);
+length();
+searchItem(int data);
+```
+lkjdf

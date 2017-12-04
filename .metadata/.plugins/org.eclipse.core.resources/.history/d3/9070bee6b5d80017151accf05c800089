@@ -1,0 +1,33 @@
+package com.binaryTree;
+
+import java.util.Arrays;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		BinaryTree bT = new BinaryTree();
+		bT.insert(1);
+		bT.insert(2);
+		bT.insert(3);
+		bT.insert(4);
+		bT.insert(5);
+		bT.insert(6);
+		bT.insert(7);
+		bT.insert(8);
+		bT.insert(9);
+		bT.insert(10);
+		bT.insert(11);
+		bT.insert(12);
+		bT.insert(13);
+		bT.insert(14);
+		bT.insert(15);
+		bT.insert(16);
+		// bT.delete(5);
+		bT.inTravese();
+		System.out.println(Arrays.toString(bT.toString()));
+		System.out.println(bT.findMax());
+		System.out.println(bT.findMin());
+	}
+
+}

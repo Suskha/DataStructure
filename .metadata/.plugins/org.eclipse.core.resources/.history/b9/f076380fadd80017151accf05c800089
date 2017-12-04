@@ -1,0 +1,46 @@
+package com.stack;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Stack {
+
+	private static int maxStack;
+	private static Scanner input = new Scanner();
+	
+	public static void main(String[] args) {
+		int maxStack = 10;
+		int[] a = new int[maxStack];
+		int top = -1;
+
+		Functions fn = new Functions(a, top);
+
+		fn.push(1);
+		fn.push(2);
+		fn.push(3);
+		fn.push(4);
+		fn.push(5);
+		fn.push(6);
+		fn.push(7);
+		fn.push(8);
+		fn.push(9);
+		fn.push(10);
+		fn.push(11);
+		System.out.println(Arrays.toString(fn.getA()));
+		System.out.println(fn.pop());
+		System.out.println(Arrays.toString(fn.getA()));
+		System.out.println(fn.peek());
+		
+		System.out.print("Enter the size of stack : ");
+		
+		System.out.println("1 - push");
+		System.out.println("2 - pop");
+		System.out.println("3 - peek");
+		System.out.print("What do you want to do : ");
+		
+		
+		
+
+	}
+
+}

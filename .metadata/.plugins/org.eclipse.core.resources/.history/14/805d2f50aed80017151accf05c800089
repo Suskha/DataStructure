@@ -1,0 +1,25 @@
+package com.queue;
+
+import java.util.Arrays;
+
+public class Queue {
+
+	public static void main(String[] args) {
+		int[] a = new int[10];
+		int top = -1;
+		int base = -1;
+		
+		Functions fn = new Functions(a,top,base);
+		
+		fn.enQueue(2);
+		fn.enQueue(3);
+		fn.enQueue(4);
+		fn.enQueue(5);
+		System.out.println(Arrays.toString(fn.getA()));
+		System.out.println(fn.deQueue());
+		System.out.println(fn.peek());
+		System.out.println(Arrays.toString(fn.getA()));
+
+	}
+
+}

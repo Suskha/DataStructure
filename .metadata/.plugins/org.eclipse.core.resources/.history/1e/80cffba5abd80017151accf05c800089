@@ -1,0 +1,10 @@
+# Stack
+
+### Stack program consists of three functions defined at FuncDefination.java file:
+
+The functions are ;
+```
+void push(data);
+pop();
+peek();
+```

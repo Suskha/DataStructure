@@ -27,3 +27,5 @@ findMax() - finds the maximum value in the tree
 findMin() - finds the minimum value in the tree
 
 inTravese() - prints the data in ascending order
+
+##### jar file can be found in binaryTree folder

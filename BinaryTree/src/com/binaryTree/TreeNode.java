@@ -54,8 +54,7 @@ public class TreeNode {
 	}
 	
 	public TreeNode find(Integer data) {
-
-		if (this.getData() == data && !isDeleted) {
+		if (this.getData() == data /*&& !isDeleted*/) {
 			return this;
 		} else if (this.getData() > data && leftChild != null) {
 			return this.leftChild.find(data);
@@ -82,7 +81,7 @@ public class TreeNode {
 	public void inTravese() {
 		if (this.leftChild != null)
 			this.leftChild.inTravese();
-		System.out.print(this + " ");
+		System.out.print(this + ", ");
 		if (this.rightChild != null)
 			this.rightChild.inTravese();
 	}
@@ -103,7 +102,8 @@ public class TreeNode {
 		return this.getRightChild().findMax();
 	}
 	
-	public String toStrings() {
+	@Override
+	public String toString() {
 		return String.valueOf(this.data);
 	}
 }

@@ -1,0 +1,56 @@
+package com.binaryTree;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	private static boolean flag = true;
+	private static Scanner input = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+
+		BinaryTree bT = new BinaryTree();
+		bT.insert(1);
+		bT.insert(2);
+		bT.insert(3);
+		bT.insert(4);
+		bT.insert(5);
+		bT.insert(6);
+		bT.insert(7);
+		bT.insert(8);
+		bT.insert(9);
+		bT.insert(10);
+		bT.insert(11);
+		bT.insert(12);
+		bT.insert(13);
+		bT.insert(14);
+		bT.insert(15);
+		bT.insert(16);
+		// bT.delete(5);
+		bT.inTravese();
+		System.out.println(bT.findMax());
+		System.out.println(bT.findMin());
+		
+		while(flag) {
+			System.out.println("1 - Insert data");
+			System.out.println("2 - delete data");
+			System.out.println("3 - view data in inTravese format");
+			System.out.println("4 - find maximum value");
+			System.out.println("5 - find minimum value");
+			System.out.println("6 - find data");
+			System.out.println("0 - quit");
+			System.out.println("Enter the operation you want to take : ");
+			switch (input.nextLine()) {
+			case value:
+				
+				break;
+
+			default:
+				break;
+			}
+		}
+		
+		
+	}
+
+}

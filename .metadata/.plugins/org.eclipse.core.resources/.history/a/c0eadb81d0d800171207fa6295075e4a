@@ -1,0 +1,63 @@
+package com.binaryTree;
+
+import java.util.Scanner;
+
+public class Main {
+
+	private static boolean flag = true;
+	private static Scanner input = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
+		BinaryTree bT = new BinaryTree();
+
+		while (flag) {
+			System.out.println("1 - Insert data");
+			System.out.println("2 - delete data");
+			System.out.println("3 - view data in inTravese format");
+			System.out.println("4 - find maximum value");
+			System.out.println("5 - find minimum value");
+			System.out.println("6 - find data");
+			System.out.println("0 - quit");
+			System.out.print("Enter the operation you want to take : ");
+			switch (input.nextLine()) {
+			case "1":
+				System.out.print("Enter the data : ");
+				bT.insert(input.nextInt());
+				input.nextLine();
+				break;
+
+			case "2":
+				bT.inTravese();
+				System.out.print("Enter what you want to delete : ");
+				bT.delete(input.nextInt());
+				input.nextLine();
+				break;
+
+			case "3":
+				bT.inTravese();
+				break;
+
+			case "4":
+				System.out.println(bT.findMax());
+				break;
+
+			case "5":
+				System.out.println(bT.findMin());
+				break;
+
+			case "6":
+				System.out.print("Enter the value you want to find : ");
+				System.out.println(bT.find(input.nextInt()));
+				input.nextLine();
+				break;
+
+			case "0":
+				flag = false;
+				break;
+			}
+		}
+
+	}
+
+}

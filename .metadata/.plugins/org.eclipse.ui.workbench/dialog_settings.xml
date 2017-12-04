@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="EditorSelectionDialog">
-		<item value="false" key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL"/>
-		<item value=".md" key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION"/>
-		<item value="winterwell.markdown.editors.MarkdownEditor" key="EditorSelectionDialog.STORE_ID_DESCR"/>
-	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="244" key="dialogHeight"/>
 		<item value="344" key="dialogWidth"/>
@@ -19,6 +14,12 @@
 		</list>
 		<list key="textArray">
 			<item value="mark"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.jdt.internal.ui.fatjarpackager.JarPackageWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.jdt.ui.Java"/>
 		</list>
 	</section>
 </section>

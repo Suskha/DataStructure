@@ -16,3 +16,5 @@ String peek();
 void enQueue(int data); insert the data in the queue.
 String deQueue(); remove the data from queue
 String peek(); to view the data only
+
+##### jar file can be found in queue folder

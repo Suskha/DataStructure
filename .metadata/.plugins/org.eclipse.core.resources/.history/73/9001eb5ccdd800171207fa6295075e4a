@@ -1,0 +1,88 @@
+package com.node;
+
+import java.net.SocketTimeoutException;
+import java.util.Scanner;
+
+public class LinkedListDemo {
+	
+	private static boolean flag = true;
+	private static Scanner input = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		LinkedList list = new LinkedList();
+		
+		list.insertAtHead(7);
+		list.insertAtHead(6);
+		list.insertAtHead(5);
+		list.insertAtHead(3);
+		list.insertAtHead(2);
+		list.insertAtHead(1);
+
+		
+		System.out.println(list.length());
+		
+		System.out.println("delete head :");
+		list.deleteHead();
+		System.out.println(list);
+		System.out.println(list.length());
+		
+		System.out.println(list.searchItem(1));
+		
+		list.insertNode(4);
+		System.out.println(list);
+		
+		list.insertNode(5);
+		System.out.println(list);
+		
+		list.insertNode(8);
+		System.out.println(list);
+		
+		
+		
+		while(flag) {
+			System.out.println("1 - insert head");
+			System.out.println("2 - serach item");
+			System.out.println("3 - insert node");
+			System.out.println("4 - find length of list");
+			System.out.println("5 - delete");
+			System.out.println("0 - quit");
+			System.out.print("Enter what you want to do : ");
+			
+			
+			switch (input.nextLine()) {
+			case "1":
+				System.out.print("Enter the data you want to input : ");
+				list.insertAtHead(input.nextInt());
+				input.nextLine();
+				break;
+
+			case "2":
+				System.out.print("Enter the search item  : ");
+				System.out.println(list.searchItem(input.nextInt()));
+				input.nextLine();
+				break;
+				
+			case "3":
+				System.out.println(list);
+				if (list.length() > 2) {
+					System.out.print("Enter the node value between two nodes item  : ");
+					list.insertNode(input.nextInt());
+					input.nextLine();
+				} else {
+					System.out.println("minimum number of list length should be 2");
+				}
+				break;
+				
+			case "4":
+				System.out.println(list.length());
+				break;
+				
+			case "0":
+				flag = false;
+				break;
+			}
+		}
+		
+		
+	}
+}

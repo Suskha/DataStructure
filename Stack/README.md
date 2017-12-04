@@ -16,3 +16,5 @@ String peek();
 void push(int data); insert the data in the stack.
 String pop(); remove the data from the top of the stack print
 String peek(); to view the data only
+
+##### jar file can be found in stack folder.

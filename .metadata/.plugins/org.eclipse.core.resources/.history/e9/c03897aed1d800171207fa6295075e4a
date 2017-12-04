@@ -1,0 +1,82 @@
+package com.binaryTree;
+
+import java.net.SocketTimeoutException;
+import java.util.Scanner;
+
+public class Main {
+
+	private static boolean flag = true;
+	private static Scanner input = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
+		BinaryTree bt = new binarytree();
+		bt.insert(1);
+		bt.insert(2);
+		bt.insert(3);
+		bt.insert(4);
+		bt.insert(5);
+		bt.insert(6);
+		bt.insert(7);
+		bt.insert(8);
+		bt.insert(9);
+		bt.insert(10);
+		bt.insert(11);
+		bt.insert(12);
+		bt.insert(13);
+		bt.insert(14);
+		bt.insert(15);
+		bt.insert(16);
+		// bt.delete(5);
+		
+
+		System.out.println("1");
+		while (flag) {
+			System.out.println("1 - insert data");
+			System.out.println("2 - delete data");
+			System.out.println("3 - find data");
+			System.out.println("4 - view data in intravese format");
+			System.out.println("5 - find max value");
+			System.out.println("6 - find min value");
+			System.out.println("0 - quit");
+			System.out.print("Enter what you want to do : ");
+			
+			switch (input.nextLine()) {
+			case "1":
+				System.out.print("Enter the data : ");
+				bt.insert(input.nextInt());
+				input.nextLine();
+				bt.inTravese();
+				break;
+
+			case "2":
+
+				break;
+				
+			case "3":
+
+				break;
+				
+			case "4":
+				bt.inTravese();
+				break;
+				
+			case "5":
+				System.out.println(bt.findMax());
+				break;
+				
+			case "6":
+				System.out.println(bt.findMin());
+				break;
+				
+			case "0":
+				flag = false;
+				break;
+
+			}
+
+		}
+
+	}
+
+}

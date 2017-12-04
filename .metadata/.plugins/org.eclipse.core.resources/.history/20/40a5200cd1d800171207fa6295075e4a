@@ -1,0 +1,51 @@
+package com.binaryTree;
+
+import java.util.Scanner;
+
+public class Main {
+
+	private static boolean flag = true;
+	private static Scanner input = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+
+		binarytree bt = new binarytree();
+		bt.insert(1);
+		bt.insert(2);
+		bt.insert(3);
+		bt.insert(4);
+		bt.insert(5);
+		bt.insert(6);
+		bt.insert(7);
+		bt.insert(8);
+		bt.insert(9);
+		bt.insert(10);
+		bt.insert(11);
+		bt.insert(12);
+		bt.insert(13);
+		bt.insert(14);
+		bt.insert(15);
+		bt.insert(16);
+		// bt.delete(5);
+		bt.intravese();
+		system.out.println(bt.findmax());
+		system.out.println(bt.findmin());
+		
+		
+		System.out.println("1");
+		
+		
+		switch (key) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+		
+		
+		
+	}
+
+}
